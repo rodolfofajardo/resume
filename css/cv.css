@@ -1,0 +1,104 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:beige;
+}
+
+header {
+    background-color: rgb(36, 36, 90);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+aside, section {
+    display: block;
+    padding: 15px;
+    float: left;
+    word-wrap: break-word;
+    }
+
+aside {
+    margin-top: 60px;
+    background-color:lightblue;
+    width: 25%;
+    border-radius: 10%;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: lightblue;
+}
+
+h2 {
+    text-align: center;
+    color: aqua;
+}
+
+h3 {
+    background-color: rgb(36, 36, 90);
+    color: lightblue;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+#summary {
+    width: 65%;
+}
+
+.content {
+    width: 93%;
+}
+
+#avatar {
+    display: block;
+    width: 20%;
+    float: left;
+    padding-top: 15px;
+}
+
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box div {
+    background-color:lightblue;
+    margin: 5px 5px;
+    border-radius: 15px;
+}
+
+.box div::before {
+    content: "\00a0 \00a0 \00a0";
+}
+
+.box div::after {
+    content: "\00a0 \00a0 \00a0";
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    background-color: lightblue;
+}
+
+td {
+    padding: 2px;
+}
+
+.project {
+    font-weight: bold;
+}
