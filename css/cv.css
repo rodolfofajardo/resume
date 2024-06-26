@@ -9,22 +9,19 @@ header {
     border-radius: 10px;
 }
 
-aside, section {
+#avatar {
     display: block;
-    padding: 15px;
+    width: 20%;
     float: left;
-    word-wrap: break-word;
-    }
-
-aside {
-    margin-top: 60px;
-    background-color:lightblue;
-    width: 25%;
-    border-radius: 10%;
+    padding-top: 15px;
 }
 
-aside h3 {
-    text-align: center;
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    border-radius: 50%;
 }
 
 h1 {
@@ -40,32 +37,92 @@ h2 {
 h3 {
     background-color: rgb(36, 36, 90);
     color: lightblue;
-    padding-left: 10px;
+    margin: 20px 0px;
+    padding: 10px;
     border-radius: 5px;
+    clear: both;
 }
 
-#summary {
-    width: 65%;
-}
-
-.content {
+section {
     width: 93%;
-}
-
-#avatar {
-    display: block;
-    width: 20%;
-    float: left;
-    padding-top: 15px;
-}
-
-.avatar {
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100px;
-    height: auto;
-    border-radius: 50%;
+}
+
+aside {
+    background-color:lightblue;
+    border-radius: 5%;
+    padding: 5px 15px;
+    width: 250px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+
+aside h3 {
+    text-align: center;
+}
+
+.education-block {
+    display: block;
+    height: 4em;
+}
+
+.education-block .title {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.education-block .institution {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dates {
+    width: 100%;
+}
+
+.dates .date {
+    height: 2em;
+    float: left;
+    margin-top: 10px;
+    width: 48%;
+    text-align: center;
+}
+
+.company-header {
+    background-color: lightblue;
+}
+
+.company-position {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.company-header .dates {
+    margin-top: 2px;
+    align-items: center;
+}
+
+.company-header .date {
+    background-color: lightblue;
+    margin: 2px 2px;
+    padding: 5px 2px;
+    width: 48%;
+}
+
+.project .name {
+    clear: both;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project .description {
+    padding-top: 5px;
+    clear: both;
 }
 
 .box {
@@ -87,18 +144,63 @@ h3 {
     content: "\00a0 \00a0 \00a0";
 }
 
-table {
-    width: 100%;
+@media (min-width:150px) and (max-width:500px) {
+    #avatar {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    aside {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .company-header .date {
+        width: 45%;
+        font-size: 0.8em;
+    }
+
 }
 
-th {
-    background-color: lightblue;
-}
+@media (min-width:701px) {
 
-td {
-    padding: 2px;
-}
+    .education-block .title {
+        width: 35%;
+        float: left;
+    }
 
-.project {
-    font-weight: bold;
+    .education-block .institution {
+        width: 35%;
+        float: left;
+    }
+
+    .dates {
+        width: 28%;
+        float: left;
+    }
+
+    .company-header .dates {
+        margin-top: 0px;
+    }
+
+    .company-header .date {
+        width: 44%;
+        margin-top: 0px;
+        margin-left: 2px;
+        height: 2.5em;
+    }
+
+    .company-position {
+        background-color: lightblue;
+        width: 70%;
+        height: 2.5em;
+        float: left;
+    }
+
+    .project .name {
+        width: 70%;
+        float: left;
+    }
 }
